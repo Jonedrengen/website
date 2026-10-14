@@ -4,52 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#edf2ee">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>A moment for you</title>
+    <title>Jonedrengen</title>
 </head>
-<body>
+    <body>
         <header class="site-header">
-            <a class="brand" href="#home" aria-label="A moment for you, home">
-                <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="">
-            </a>
-            <a class="header-link" href="#small-moment">A little space to breathe <span aria-hidden="true">↘</span></a>
+            <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="">
         </header>
 
         <main id="home">
-            <section class="hero" aria-labelledby="hero-title">
-                <div class="hero-copy">
-                    <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> A NOTE FOR THIS MOMENT</p>
-                    <h1 id="hero-title">It’s okay.<br>You made it.</h1>
-                    <p class="hero-text">Whatever the day has held, you’re here now. Let that be enough for a little while.</p>
-                    <a class="primary-link" href="#small-moment">Find a quiet moment <span aria-hidden="true">↓</span></a>
-                </div>
-                <div class="hero-art" aria-label="A gentle reminder to take things one moment at a time">
-                    <div class="art-topline"><span>RIGHT HERE</span><span>01 / 03</span></div>
-                    <div class="logo-frame">
-                        <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="A gentle reminder: you made it">
-                    </div>
-                    <p class="art-caption">No need to rush<br>the next thing.</p>
-                    <span class="art-spark" aria-hidden="true">✳</span>
-                </div>
-                <div class="hero-footnote"><span>TAKE A BREATH</span><span class="footnote-line" aria-hidden="true"></span><span>YOU’RE HERE</span></div>
+            <section>
+                <h1>Welcome to Big man Jon's website</h1>
+
             </section>
 
-            <section class="moment" id="small-moment" aria-labelledby="moment-title">
-                <div class="moment-heading">
-                    <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> START SMALL</p>
-                    <h2 id="moment-title">You can begin<br>with just <em>one thing.</em></h2>
-                </div>
-                <ol class="moment-list">
-                    <li><span class="step-number">01</span><div><h3>Let your shoulders drop.</h3><p>You don’t have to carry this exact moment so tightly.</p></div><span class="step-mark" aria-hidden="true">↘</span></li>
-                    <li><span class="step-number">02</span><div><h3>Take one easy breath.</h3><p>No special way to do it. Just notice the next one.</p></div><span class="step-mark" aria-hidden="true">↘</span></li>
-                    <li><span class="step-number">03</span><div><h3>Stay for this moment.</h3><p>The rest can wait until you’re ready.</p></div><span class="step-mark" aria-hidden="true">↘</span></li>
-                </ol>
-            </section>
+
         </main>
 
-        <footer class="site-footer"><span>A MOMENT FOR YOU</span><span>Take what you need. Leave the rest.</span></footer>
+        <footer class="site-footer"><span>fotter</span><span>Leave the rest.</span></footer>
     </body>
 </html>

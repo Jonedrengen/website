@@ -9,7 +9,10 @@
       "courses": [
         "Software engineering for health related issues",
         "Cloud-based solutions",
-        "Epidemiology",
+        "Course in Register Based Epidemiology",
+        "Health IT Infrastructure",
+        "Implementation and Evaluation",
+        "Project in Health Innovation",
         "Python for data analysis and visualization",
         "Statistical analysis with R"
       ]
@@ -24,8 +27,7 @@
     {
       "institution": "CBS",
       "courses": [
-        "Data-driven decision making",
-        ""
+        "Data-driven decision making"
       ]
     }
   ]
