@@ -1,0 +1,32 @@
+{
+  "degrees": [
+    { "level": "Bachelor's", "field": "Health Informatics" },
+    { "level": "Master's / Candidate", "field": "Health Informatics" }
+  ],
+  "coursework": [
+    {
+      "institution": "KU",
+      "courses": [
+        "Software engineering for health related issues",
+        "Cloud-based solutions",
+        "Epidemiology",
+        "Python for data analysis and visualization",
+        "Statistical analysis with R"
+      ]
+    },
+    {
+      "institution": "DTU",
+      "courses": [
+        "UX design", 
+        "UX engineering"
+      ]
+    },
+    {
+      "institution": "CBS",
+      "courses": [
+        "Data-driven decision making",
+        ""
+      ]
+    }
+  ]
+}
