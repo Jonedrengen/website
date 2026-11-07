@@ -1,20 +1,70 @@
 :root {
+
+    /* basic palette */
     --beige-white: #FFF5F5;
     --beige: #F7D6D0;
     --pinkish: #E2B4BD;
     --greyish: #4A4A4A;
+
+    /* Additional colors - source: https://color.adobe.com/explore?q=Neutral+Palette */
+    --brown-dark: #40352C;
+    --taupe: #A69B92;
+    --warm-grey: #D9D0C7;
+    --off-white: #F2EEEB;
+    --near-black: #0D0D0D;
+    
+    /* Fonts */
+    --font-header: 'DM Sans', sans-serif;
+    --font-body: 'Fraunces', serif;
+
+    /* default padding */
+    --default-padding: 20px;
+    
 }
 
+/* main elements */
+section {
+    margin: 10px;
+}
+main {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--warm-grey);
+}
+html {
+    background-color: var(--off-white);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
-
-.logo-container {
+/* Site header styling */
+.site-header {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--beige-white);
+    justify-content: space-between;
+    background-color: var(--warm-grey);
+    padding: var(--default-padding);
+    border: 20px;
+    
 }
-.logo-container img {
-    width: 50px;
-    height: 50px;
+.site-header__title {
+    font-family: var(--font-header);
+    color: var(--greyish);
+    font-size: 48px;
+    padding: var(--default-padding);
 }
+.site-header__body {
+    font-family: var(--font-body);
+    color: var(--greyish);
+    font-size: 16px;
+    padding: var(--default-padding);
+}
+
+.site-header__image {
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    padding: var(--default-padding);
+}
+

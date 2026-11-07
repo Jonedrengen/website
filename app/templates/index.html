@@ -8,21 +8,28 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Jonedrengen</title>
 </head>
-    <body>
-        <header class="site-header">
-            <div class="logo-container">
-            <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="">
-        </header>
+<body>
+    <main id="home">
+        <section class="site-header">
+            <div>
+                <h1 class="site-header__title">Jon Sztuk Slotved</h1>
+                <p class="site-header__body">
+                    This website is currently under development :D
+                </p>
+            </div>
+            <img class="site-header__image" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Jonedrengen">
+        </section>
 
-        <main id="home">
-            <section>
-                <h1>Welcome to Big man Jon's website</h1>
 
-            </section>
+        <section>
+            <h2>empty section</h2>
+
+        </section>
 
 
-        </main>
 
         <footer class="site-footer"><span>fotter</span><span>Leave the rest.</span></footer>
-    </body>
+
+    </main>
+</body>
 </html>
