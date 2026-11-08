@@ -10,7 +10,23 @@
 </head>
 <body>
     <main id="home">
-        <section class="site-header">
+        <section class="grouped-nav-animation">
+        
+            <div class="animation-container">
+                <p>animation here</p>
+            </div>
+            <nav class="nav" aria-label="nav">
+                <a href="#home">Home</a>
+
+                <a href="#section1">Projects</a>
+
+                <a href="#section2">About</a>
+
+                <a href="#section3">Contact</a>
+
+            </nav>
+        </section>
+        <header class="site-header">
             <div>
                 <h1 class="site-header__title">Jon Sztuk Slotved</h1>
                 <p class="site-header__body">
@@ -18,7 +34,11 @@
                 </p>
             </div>
             <img class="site-header__image" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Jonedrengen">
-        </section>
+        </header>
+
+        
+
+
 
 
         <section>

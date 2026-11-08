@@ -17,35 +17,74 @@
     --font-header: 'DM Sans', sans-serif;
     --font-body: 'Fraunces', serif;
 
-    /* default padding */
-    --default-padding: 20px;
+    /* default spacing */
+    --default-padding: 10px;
+    --default-margin: 10px;
+    --default-border-radius: 10px;
     
 }
 
 /* main elements */
 section {
-    margin: 10px;
+    margin: var(--default-margin);
+    padding: var(--default-padding);
 }
 main {
-    margin: 0px;
+    margin: var(--default-margin);
     padding: 0px;
     background-color: var(--warm-grey);
 }
 html {
-    background-color: var(--off-white);
+    background-color: var(--warm-grey);
 }
 body {
-    margin: 0px;
+    margin: var(--default-margin);
     padding: 0px;
+}
+header {
+    margin: var(--default-margin);
+    padding: var(--default-padding);
+}
+p {
+    font-family: var(--font-body);
+}
+
+/* Navigation and grouped nav animation */
+.grouped-nav-animation {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--default-margin);
+    padding: var(--default-padding);
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: var(--default-padding);
+    margin: var(--default-margin);
+    
+    background-color: var(--taupe);
+}
+nav a {
+    text-decoration: none;
+    color: var(--greyish);
+    padding: var(--default-padding);
+    margin: var(--default-margin);
+}
+.animation-container {
+    justify-content: right;
+    background-color: var(--off-white);
+    padding: var(--default-padding);
+    margin: var(--default-margin);
 }
 
 /* Site header styling */
 .site-header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--warm-grey);
+    background-color: var(--taupe);
     padding: var(--default-padding);
     border: 20px;
+    border-radius: 20px;
     
 }
 .site-header__title {
@@ -65,6 +104,7 @@ body {
     width: auto;
     height: auto;
     border-radius: 30px;
+    margin: var(--default-margin);
     padding: var(--default-padding);
-}
 
+}
