@@ -6,15 +6,22 @@
     <meta name="theme-color" content="#edf2ee">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script
+        src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js"
+        type="module"
+    ></script>
     <title>Jonedrengen</title>
 </head>
 <body>
     <main id="home">
-        <section class="grouped-nav-animation">
-        
-            <div class="animation-container">
-                <p>animation here</p>
-            </div>
+        <section class="nav-animation-section">
+            <dotlottie-wc src="{{ url_for(endpoint='static', filename='animations/Science.lottie') }}"
+                    speed="1"
+                    style="width: 100px; height: 100px"
+                    mode="forward"
+                    loop
+                    autoplay>
+            </dotlottie-wc>
             <nav class="nav" aria-label="nav">
                 <a href="#home">Home</a>
 
@@ -26,30 +33,24 @@
 
             </nav>
         </section>
-        <header class="site-header">
+        <section class="hero-section">
             <div>
-                <h1 class="site-header__title">Jon Sztuk Slotved</h1>
-                <p class="site-header__body">
+                <h1 class="hero-section__title">Jon Sztuk Slotved</h1>
+                <p>
                     This website is currently under development :D
                 </p>
             </div>
-            <img class="site-header__image" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Jonedrengen">
-        </header>
-
-        
-
-
-
-
-        <section>
-            <h2>empty section</h2>
-
+            <img class="hero-section__image" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="Jonedrengen">
         </section>
 
-
-
-        <footer class="site-footer"><span>fotter</span><span>Leave the rest.</span></footer>
-
+        <section class="project-browsing-section">
+            <h2 class="project-browsing-section__title">Project browsing</h2>
+            <p>Jinja inputs here</p>
+        </section>
     </main>
+    <footer class="footer">
+        <span>fotter</span>
+        <span>Leave the rest.</span>
+    </footer>
 </body>
 </html>

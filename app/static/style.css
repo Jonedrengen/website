@@ -31,8 +31,13 @@ section {
 }
 main {
     margin: var(--default-margin);
-    padding: 0px;
     background-color: var(--warm-grey);
+    display: flex;
+    flex-direction: column;
+    
+    /* main content spacing */
+    gap: 24px;
+    max-width: 1440px;
 }
 html {
     background-color: var(--warm-grey);
@@ -41,27 +46,26 @@ body {
     margin: var(--default-margin);
     padding: 0px;
 }
-header {
-    margin: var(--default-margin);
-    padding: var(--default-padding);
-}
 p {
     font-family: var(--font-body);
+    color: var(--greyish);
+    font-size: 16px;
 }
 
-/* Navigation and grouped nav animation */
-.grouped-nav-animation {
+
+/* Navigation and nav animation section */
+.nav-animation-section {
     display: flex;
     justify-content: space-between;
-    margin: var(--default-margin);
-    padding: var(--default-padding);
+    margin-bottom: -35px;
+
 }
 nav {
     display: flex;
     justify-content: flex-start;
     padding: var(--default-padding);
     margin: var(--default-margin);
-    
+    border-radius: var(--default-border-radius);
     background-color: var(--taupe);
 }
 nav a {
@@ -72,13 +76,10 @@ nav a {
 }
 .animation-container {
     justify-content: right;
-    background-color: var(--off-white);
-    padding: var(--default-padding);
-    margin: var(--default-margin);
 }
 
-/* Site header styling */
-.site-header {
+/* Hero section styling (hero as in me.....) */
+.hero-section {
     display: flex;
     justify-content: space-between;
     background-color: var(--taupe);
@@ -87,20 +88,13 @@ nav a {
     border-radius: 20px;
     
 }
-.site-header__title {
+.hero-section__title {
     font-family: var(--font-header);
     color: var(--greyish);
     font-size: 48px;
-    padding: var(--default-padding);
-}
-.site-header__body {
-    font-family: var(--font-body);
-    color: var(--greyish);
-    font-size: 16px;
-    padding: var(--default-padding);
 }
 
-.site-header__image {
+.hero-section__image {
     width: auto;
     height: auto;
     border-radius: 30px;
@@ -108,3 +102,18 @@ nav a {
     padding: var(--default-padding);
 
 }
+
+.project-browsing-section {
+    background-color: var(--taupe);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-browsing-section__title {
+    font-family: var(--font-body);
+    color: var(--greyish);
+}
+
+.footer {
+    background-color: var(--taupe);
